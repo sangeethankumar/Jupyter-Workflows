@@ -1,14 +1,12 @@
 tasks:
   - init: |
-      # Extract the folder name from the Gitpod URL
-      URL=$(gp env | grep GITPOD_WORKSPACE_URL | cut -d'=' -f2)
-      FOLDER=$(echo $URL | grep -oP 'tree/\K[^/?]*')
-      
-      if [ -z "$FOLDER" ]; then
-        echo "No folder specified in the URL."
+      # Check if GITPOD_WORKDIR environment variable is set
+      if [ -z "$GITPOD_WORKDIR" ]; then
+        echo "GITPOD_WORKDIR is not set. Exiting."
         exit 1
       fi
       
+      FOLDER=$GITPOD_WORKDIR
       echo "Opening folder: $FOLDER"
       
       # Change to the folder directory
