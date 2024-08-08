@@ -6,11 +6,7 @@ tasks:
       eval "$(/home/gitpod/miniconda/bin/conda shell.bash hook)"
       conda init
       # Check if the current folder has an environment.yml
-      if [ -f environment.yml ]; then
-        conda env create -f environment.yml
-      else
-        echo "No environment.yml file found in the current folder."
-      fi
+      conda env create -f environment.yml
     command: |
       eval "$(/home/gitpod/miniconda/bin/conda shell.bash hook)"
       conda activate $(head -n 1 environment.yml | cut -d' ' -f2)
