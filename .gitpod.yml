@@ -1,7 +1,7 @@
 tasks:
   - init: |
       # Install Miniconda
-      FOLDER=$(basename $(gitpod url 8080))
+      FOLDER=${GITPOD_REPO_ROOT##*/}
       cd $FOLDER
       wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh
       bash miniconda.sh -b -p /home/gitpod/miniconda
