@@ -16,8 +16,8 @@
 **Conda environment**: jpapermill
 
 1. **Running Notebooks from URL** (1. Running Notebook From Sciebo.ipynb) 
-    - (cannot run outside of my environment)
+    - url_to_file (ask me url for the sciebo url link)
     - Create .env file and fill with below lines
     ```bash
-    input_url=https://your/sciebo/url/notebook.ipynb
+    input_url=url_to_file
     ```
