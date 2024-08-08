@@ -6,7 +6,5 @@ dependencies:
   - pip:
     - numpy
     - matplotlib
-    - pandas
     - nbformat
-    - nbconvert
     - pillow
