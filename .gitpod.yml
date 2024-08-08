@@ -13,12 +13,16 @@ tasks:
       echo "| Removing Miniconda Installer Script |"
       echo "---------------------------------------"
       rm miniconda.sh
+      echo "Removed"
       echo "------------------"
       echo "| Getting Folder |"
       echo "------------------"
       FOLDER=$(echo $GITPOD_WORKSPACE_CONTEXT | jq -r '.normalizedContextURL' | awk -F'/' '{print $NF}')
+      echo $FOLDER
       cd "$FOLDER"
-      echo "Creating Conda environment from environment YAML"
+      echo "----------------------------------------------------"
+      echo "| Creating Conda environment from environment YAML |"
+      echo "----------------------------------------------------"
       conda env create -f environment.yml
       echo "~~~~~~~~"
       echo "Success!"
