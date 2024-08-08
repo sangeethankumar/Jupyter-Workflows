@@ -5,5 +5,5 @@
 Conda environment to use: jnbformat
 
 1. Structure of Jupyter Notebook (1. Jupyter Notebook Structure.ipynb)
-    - Run all cells in notebook_to_read.ipynb sequentially. You can Restart and Re-run. This is necessary to make sure we don't get invalid results while running Jupyter Notebook Structure as it assumes cells are run sequentially from top to bottom in notebook_to_read.ipynb.
-    - Run Jupyter Notebook Structure
+    - Run all cells in notebook_to_read.ipynb sequentially. Restart and re-run the notebook to ensure all cells execute in the correct order. This is necessary to prevent any invalid results, as Jupyter Notebook Structure.ipynb assumes cells are run sequentially from top to bottom in notebook_to_read.ipynb.
+    - Run Jupyter Notebook Structure.ipynb.
