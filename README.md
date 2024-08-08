@@ -9,3 +9,15 @@
     - Run all cells in notebook_to_read.ipynb sequentially. Restart and re-run the notebook to ensure all cells execute in the correct order. This is necessary to prevent any invalid results, as Jupyter Notebook Structure.ipynb assumes cells are run sequentially from top to bottom in notebook_to_read.ipynb.
     - Run Jupyter Notebook Structure.ipynb.
 2. **Writing And Manipulating Jupyter Notebook** (2. Writing Jupyter Notebook.ipynb)
+
+## Papermill
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/sangeethankumar/Jupyter-Workflows/tree/main/papermill)
+
+**Conda environment**: jpapermill
+
+1. **Running Notebooks from URL** (1. Running Notebook From Sciebo.ipynb) 
+    - (cannot run outside of my environment)
+    - Create .env file and fill with below lines
+    ```bash
+    input_url=https://your/sciebo/url/notebook.ipynb
+    ```
