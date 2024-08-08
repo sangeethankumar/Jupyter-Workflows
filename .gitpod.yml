@@ -1,6 +1,3 @@
-additionalRepositories:
-    - url: https://github.com/sangeethankumar/Jupyter-Workflows/nbconvert
-      checkoutLocation: nbconvert
 tasks:
   - init: |
       # Install Miniconda
@@ -8,10 +5,4 @@ tasks:
       bash miniconda.sh -b -p /home/gitpod/miniconda
       eval "$(/home/gitpod/miniconda/bin/conda shell.bash hook)"
       conda init
-      conda env create -f environment.yml
       conda activate
-    command: |
-      eval "$(/home/gitpod/miniconda/bin/conda shell.bash hook)"
-      conda activate
-  - name: Run your custom command here (optional)
-    command: echo "Custom setup complete"
