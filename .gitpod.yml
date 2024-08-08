@@ -1,15 +1,36 @@
 tasks:
   - init: |
-      # Install Miniconda
-      FOLDER=${GITPOD_WORKDIR}
+      # Extract the folder name from the Gitpod URL
+      URL=$(gp env | grep GITPOD_WORKSPACE_URL | cut -d'=' -f2)
+      FOLDER=$(echo $URL | grep -oP 'tree/\K[^/?]*')
+      
+      if [ -z "$FOLDER" ]; then
+        echo "No folder specified in the URL."
+        exit 1
+      fi
+      
       echo "Opening folder: $FOLDER"
-      cd $FOLDER
+      
+      # Change to the folder directory
+      if [ -d "$FOLDER" ]; then
+        cd $FOLDER
+      else
+        echo "Folder $FOLDER does not exist."
+        exit 1
+      fi
+      
+      # Install Miniconda
       wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh
       bash miniconda.sh -b -p /home/gitpod/miniconda
       eval "$(/home/gitpod/miniconda/bin/conda shell.bash hook)"
       conda init
+      
       # Check if the current folder has an environment.yml
-      conda env create -f environment.yml
+      if [ -f environment.yml ]; then
+        conda env create -f environment.yml
+      else
+        echo "No environment.yml found in $FOLDER."
+      fi
     command: |
       eval "$(/home/gitpod/miniconda/bin/conda shell.bash hook)"
-      conda activate $(head -n 1 environment.yml | cut -d' ' -f2)
+      conda activate $(head -n 1 environment.yml | cut -d' ' -f2) || echo "Environment activation failed."
