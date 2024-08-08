@@ -1,0 +1,11 @@
+name: jpapermill
+
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+    - papermill
+    - numpy
+    - matplotlib
+    - pandas
+    - python-dotenv
