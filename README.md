@@ -22,3 +22,8 @@
     input_url=url_to_file
     ```
 2. **Options to execute notebook** (2. Papermill Execution Options.ipynb)
+
+## Reproducibility (In progress)
+**Conda environment**: jreproduce
+
+1. **Workflow to create a conda environment and run a notebook within that environment** 
