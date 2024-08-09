@@ -1,0 +1,9 @@
+name: jreproduce
+
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+      - numpy
+      - matplotlib
+      - papermill
