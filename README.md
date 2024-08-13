@@ -27,3 +27,13 @@
 **Conda environment**: jreproduce
 
 1. **Workflow to create a conda environment and run a notebook within that environment** 
+
+
+## Workflow (In progress)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/sangeethankumar/Jupyter-Workflows/tree/main/pydoit)
+
+**Conda environment**: jpydoit
+
+1. **Structure of dodo.py** (1. Basic Structure)
+2. **Structure of actions** (2. Action Structure)
+3. **More on actions** (3. Defining Actions)
