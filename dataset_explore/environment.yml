@@ -1,0 +1,13 @@
+name: jdataexplore
+
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+    - pandas
+    - numpy
+    - matplotlib
+    - seaborn
+    - pynwb
+    - dandi
+    - dtale
