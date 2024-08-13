@@ -8,3 +8,5 @@ dependencies:
     - numpy
     - matplotlib
     - pandas
+    - python-dotenv
+    - nbformat
