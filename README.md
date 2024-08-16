@@ -36,3 +36,23 @@
 
 ## Data Exploration
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/sangeethankumar/Jupyter-Workflows/tree/main/dataset_explore)
+
+# Plan
+
+## Day 1: Intro to Jupyter and Papermill
+1. Jupyter Notebook Structure with `nbformat`
+2. Writing and Editing Jupyter Notebooks with `nbformat`
+3. Papermill to parametrize Jupyter Notebooks
+4. Some Analysis with Papermill
+---
+## Building Transparent Analysis Workflows with Pydoit
+5. Notebook 5
+6. Notebook 6
+7. Notebook 7
+8. Notebook 8
+----
+## EDA and reporting with `dtale` and `nbconvert`
+9. Notebook 9
+10. Notebook 10
+11. Notebook 11
+12. Notebook 12
