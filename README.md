@@ -43,7 +43,7 @@
 1. Jupyter Notebook Structure with `nbformat`
 2. Writing and Editing Jupyter Notebooks with `nbformat`
 3. Papermill to parametrize Jupyter Notebooks
-4. Some Analysis with Papermill
+4. Some Analysis with Papermill (parameterize subjects)
 ---
 ## Building Transparent Analysis Workflows with Pydoit
 5. Notebook 5
